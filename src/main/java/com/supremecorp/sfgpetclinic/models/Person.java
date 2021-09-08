@@ -1,7 +1,6 @@
 package com.supremecorp.sfgpetclinic.models;
 
-public class Person {
-    private long id;
+public class Person extends BaseEntity{
     private String firstName;
     private String lastName;
 
@@ -21,11 +20,4 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }

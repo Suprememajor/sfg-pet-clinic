@@ -2,8 +2,7 @@ package com.supremecorp.sfgpetclinic.models;
 
 import java.time.LocalDate;
 
-public class Pet {
-    private Long id;
+public class Pet extends BaseEntity {
     private Owner owner;
     private PetType petType;
     private LocalDate birthdate;
@@ -32,11 +31,4 @@ public class Pet {
         this.birthdate = birthdate;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }
