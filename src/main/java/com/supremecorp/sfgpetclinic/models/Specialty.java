@@ -1,9 +1,16 @@
 package com.supremecorp.sfgpetclinic.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by suprememajor on the 9/9/21
  */
+@Entity
+@Table(name = "specialty")
 public class Specialty extends BaseEntity{
+    @Column(name = "description")
     private String description;
 
     public String getDescription() {
