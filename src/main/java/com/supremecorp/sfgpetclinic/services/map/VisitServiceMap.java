@@ -2,12 +2,14 @@ package com.supremecorp.sfgpetclinic.services.map;
 
 import com.supremecorp.sfgpetclinic.models.Visit;
 import com.supremecorp.sfgpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by suprememajor on the 9/10/21
  */
+@Service
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
