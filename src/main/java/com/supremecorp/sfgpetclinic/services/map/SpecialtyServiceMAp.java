@@ -2,6 +2,7 @@ package com.supremecorp.sfgpetclinic.services.map;
 
 import com.supremecorp.sfgpetclinic.models.Specialty;
 import com.supremecorp.sfgpetclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -10,6 +11,7 @@ import java.util.Set;
  * Created by suprememajor on the 9/9/21
  */
 @Service
+@Profile({"default", "map"})
 public class SpecialtyServiceMAp extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
